@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-timezone: PST
+timezone: UTC
 collections:
   posts:
     title: Posts
@@ -9,7 +9,6 @@ collections:
     title: Uploads
     output: true
 defaults:
-theme: jport
 - scope:
     path: ''
     type: posts

@@ -1,11 +1,11 @@
-﻿# jport
+# justice-amsbury.com
 
-This is my portfolio site template.
-## Usage
+## Portfolio
 
-For my portfolio. 
 
-## License
+### Documentation & Notes
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
+Projects displayed:
+- Manito Illustrations
+- Google Doodle
+- MELLC
