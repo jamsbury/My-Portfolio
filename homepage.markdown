@@ -1,0 +1,142 @@
+---
+title: homepage
+date: 2018-06-14 22:34:00 Z
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- RWD -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- iOS MetaTags -->
+  <!-- Change Name of App -->
+  <meta name="apple-mobile-web-app-title" content="justice's portfolio">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- iOS Splash Screen & Favicons for iPhones. Create your own iPad sizes -->
+  <link href="assets/img/favicons/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="assets/img/favicons/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+  <link href="assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+
+  <!-- Favicons. Not iOS -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--  Bulma -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!--  This Site/App -->
+  <title> Justice's Portfolio </title>
+  <link rel="stylesheet" href="assets/css/styles.processed.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="left-half">
+      <h1>hi, i'm</h1>
+    </div>
+    <div class="right-half">
+      <h1>justice</h1>
+      <h2>web and ux designer</h2>
+    </div>
+  </header>
+  <nav>
+    <a href="#about"><button>about</button></a>
+    <a href="#work"><button>work</button></a>
+    <a href="#contact"><button>contact</button></a>
+  </nav>
+  <section id="about">
+    <h3>what do i do?</h3>
+    <ul>
+      <li>
+        <h4>design</h4>
+        <p>
+          with my background in design, i can help you turn ideas into a brand and visual identity that will resonate strongly with your target audience.
+        </p>
+      </li>
+      <li>
+        <h4>web</h4>
+        <p>
+          i can bring a responsive web site to life using html5, css3, and javascript. i prefer developing from scratch, but can work well within frameworks.
+        </p>
+      </li>
+      <li>
+        <h4>ux/ui</h4>
+        <p>
+          i can wireframe and create interfaces with a focus on intuitive design, content structure, and simple user interactions that will keep your users engaged.
+        </p>
+      </li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon class="svg-sm" fill="#fffeee" points="0,100 100,100 100,0"/>
+  </svg>
+  </section>
+
+  <section id="work">
+    <h3>my work</h3>
+    <ul>
+      <li>
+        <h4>mellc landing page</h4>
+        <p>
+          a landing page i was hired to create for mandaree enterprises that links to several of their other websites. the page is mostly a recreation of their previous landing page that had to be taken down because of security issues.
+        </p>
+        <!-- will link eventually or replace item -->
+        <a href="#"><img src="assets/img/mellc.svg" alt="mellc landing page"></a></li>
+      <li>
+        <h4>lodger google doodle</h4>
+        <p>
+          a page i made in order to practice css animations. it's an animated recreation of the album cover for david bowie's "lodger" with several little touches to differentiate it from the original image.
+        </p>
+        <a href="https://jamsbury.github.io/Lodger-Google-Doodle/"><img src="assets/img/google.svg" alt="david bowie lodger google doodle"></a>
+      </li>
+      <li>
+        <h4>various illustrations</h4>
+        <p>
+          various illustrations i've made for several projects, i prefer to avoid illustrations that look like they've been made on a computer and try to incorporate some "organic" energy into my work.
+        </p>
+        <div id="gallery">
+          <a href="assets/img/camp-mask.jpg">
+          <img src="assets/img/camp-mask-thumb.jpg" alt="camp journey mask illustration"> 
+      </a>
+          <a href="assets/img/camp-front.jpg">
+          <img src="assets/img/camp-front-thumb.jpg" alt="camp journey day illustration"> 
+      </a>
+          <a href="assets/img/camp-back.jpg">
+          <img src="assets/img/camp-back-thumb.jpg" alt="camp journey evening illustration"> 
+      </a>
+          <a href="assets/img/manito.jpg">
+          <img src="assets/img/manito-thumb.jpg" alt="manito park promotional illustration"> 
+      </a>
+        </div>
+      </li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon class="svg-sm" fill="#00d9e5" points="0,0 100,100 0,100"/>
+  </svg>
+  </section>
+
+  <section id="contact">
+    <h3>contact information</h3> 
+    <p>need somebody to do some design? feel free to send me an email and we can discuss your company and your project!</p>
+    <h4>justiceamsburycr@gmail.com</h4>
+</form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/lettering.js"></script>
+  <script src="assets/js/elevatezoom.js"></script>
+  <script src="assets/js/lightgallery.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
