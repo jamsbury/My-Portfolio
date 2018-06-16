@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <!-- RWD -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- iOS MetaTags -->
-  <!-- Change Name of App -->
-  <meta name="apple-mobile-web-app-title" content="justice's portfolio">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <!-- iOS Splash Screen & Favicons for iPhones. Create your own iPad sizes -->
-  <link href="assets/img/favicons/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
-  <link href="assets/img/favicons/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
-  <link href="assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-
-  <!-- Favicons. Not iOS -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-  <!--  Bulma -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-  <!--  This Site/App -->
-  <title> Justice's Portfolio </title>
-  <link rel="stylesheet" href="assets/css/styles.processed.css">
-
-</head>
+{% include "_includes/head.html" }
 
 <body>
   <header>
@@ -126,12 +92,4 @@
 </form>
   </section>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="assets/js/lettering.js"></script>
-  <script src="assets/js/elevatezoom.js"></script>
-  <script src="assets/js/lightgallery.min.js"></script>
-  <script src="assets/js/scripts.js"></script>
-</body>
-
-</html>
+  {% include "_includes/scriptfoot.html" }
