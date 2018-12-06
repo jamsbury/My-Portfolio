@@ -1,0 +1,70 @@
+div.missing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 1fr 50px;
+  align-items: center;
+  align-self: center;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+div.missing svg {
+  grid-row: 2;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  width: 60%;
+}
+
+div.missing section {
+  grid-row: 3;
+  width: 90%;
+  margin: auto;
+}
+
+div.missing h3 {
+  align-self: start;
+  display: inline-block;
+  font-size: 1.5em;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin: 1em 0 0 0;
+  color: $main-color;
+}
+
+div.gethome {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+  background-color: $main-color;
+  color: #fffeee;
+  padding: 0.5em;
+  transition-duration: 0.25s;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+}
+
+div.gethome:hover {
+  background-color: #00b5bf;
+}
+
+@media screen and (min-width: 900px) {
+  div.missing svg {
+    width: 30%;
+  }
+  div.missing section {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  div.missing svg {
+    width: 30%;
+  }
+  div.missing section {
+    width: 40%;
+  }
+}

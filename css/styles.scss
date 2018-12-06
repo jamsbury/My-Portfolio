@@ -8,6 +8,8 @@
 @import "lettering";
 // sub section styles
 @import "subsection";
+// 404
+@import "404";
 // typefaces
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto");
 
@@ -39,7 +41,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   display: block;
   font-size: 12vw;
   line-height: 1;
@@ -69,7 +71,7 @@ h4 {
 h6 {
   font-size: 1.25em;
   margin: 0;
-  color: #090909; 
+  color: #090909;
 }
 
 //cite https://css-tricks.com/creating-non-rectangular-headers/
@@ -142,7 +144,8 @@ nav div {
   justify-content: space-around;
 }
 
-button, nav div {
+button,
+nav div {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -233,7 +236,6 @@ h5 {
   text-align: center;
   font-size: 1.25em;
   width: 100%;
-  left: 1rem;
   bottom: 1rem;
   transition-duration: 300ms;
 }
@@ -247,7 +249,7 @@ div.desc {
   padding: 1em 0;
   position: absolute;
   z-index: 2;
-  opacity: 0.9;
+  opacity: 1;
   width: 100%;
   height: 0.25em;
   transition-duration: 300ms;
@@ -271,21 +273,24 @@ section#contact h4 {
 div.footergrid {
   margin: auto;
   margin-top: 2em;
-  display: flex;
-  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 2em;
+  width: 80%;
   align-items: center;
   align-self: center;
-  grid-template-columns: 50% 50%;
 }
 
 .footergrid p {
+  grid-column: 2 / span 2;
   vertical-align: top;
 }
 
-.footergrid a {
-  text-align: right;
-  padding-right: 2em;
-  width: 60%;
+.footergrid a img {
+  display: block;
+  grid-column: 1;
+  margin: auto;
+  width: 100%;
 }
 
 // MEDIA QUERIES //
@@ -314,6 +319,9 @@ div.footergrid {
 
   section#about ul li:last-child {
     padding-right: 0;
+  }
+  div.footergrid {
+    width: 60%;
   }
 }
 
@@ -355,7 +363,7 @@ div.footergrid {
   }
 
   // IMAGE HOVER STYLES //
-  
+
   section#work ul li a:hover div.desc {
     height: 2.5em;
   }
@@ -370,11 +378,18 @@ div.footergrid {
   section#work ul li {
     grid-column: span 1;
   }
+  div.footergrid {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   h1 {
     margin: 5% 0 0 0;
+  }
+
+  div.footergrid {
+    width: 40%;
   }
 
   .left-half h1 {
@@ -404,5 +419,5 @@ div.footergrid {
   }
   section.gallery ul li.largerspan {
     grid-column: 1 / span 2;
-}
+  }
 }
