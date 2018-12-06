@@ -1,0 +1,408 @@
+// framework
+@import "uikit.min";
+// boilerplate fixes
+@import "boilerplate";
+// normalize
+@import "normalize";
+// lettering
+@import "lettering";
+// sub section styles
+@import "subsection";
+// typefaces
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto");
+
+// GENERAL USE //
+
+$main-color: #00d9e5;
+$dark-color: #003c40;
+$moderate-color: #00b5bf;
+$off-white: #fffeee;
+
+$secondary-color: #414bff;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $off-white;
+  color: $off-white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+.main-color {
+  color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  display: block;
+  font-size: 12vw;
+  line-height: 1;
+  font-weight: bold;
+  margin: 40% 0 0 0;
+  color: $off-white;
+}
+
+h2 {
+  margin: 5% 0 0 4%;
+  font-size: 4vw;
+  color: $main-color;
+}
+
+h3 {
+  margin: auto;
+  text-align: left;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.25em;
+  margin: 0;
+  color: #090909; 
+}
+
+//cite https://css-tricks.com/creating-non-rectangular-headers/
+svg {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.desc svg {
+  bottom: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// HEADER STYLES //
+
+header {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 85vh;
+}
+
+.left-half {
+  background-color: $main-color;
+  flex: 1;
+  padding: 0 1em 0 0;
+  margin: 0;
+  text-align: right;
+}
+
+.right-half {
+  flex: 1;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+.left-half h1 {
+  margin: 30vh 4% 0 0;
+}
+
+.right-half h1 {
+  color: $main-color;
+  margin: 40vh 0 0 4%;
+}
+
+// NAV STYLES //
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  height: 15vh;
+}
+
+nav a {
+  flex: 1;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button, nav div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: $off-white;
+  border: solid $off-white 1px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  background-color: $main-color;
+  transition-duration: 0.25s;
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: $moderate-color;
+}
+
+section {
+  padding: 5% 5% 10% 5%;
+}
+
+// ABOUT SECTION STYLES //
+section#about,
+#contact {
+  background-color: $main-color;
+  position: relative;
+}
+
+section#about h4,
+#contact h4 {
+  margin: 5vh 0 0 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: auto auto 4.5em auto;
+  padding: 0;
+  width: 100%;
+}
+
+// SHOWCASE STYLES //
+
+section#work ul li.largerspan {
+  grid-column: 1 / span 2;
+}
+
+section#work {
+  background-color: $off-white;
+  position: relative;
+}
+
+section#work ul {
+  margin-bottom: 3em;
+}
+
+section#work h3 {
+  margin-bottom: 25px;
+}
+
+ul.showcase-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5em 3em;
+  width: 100%;
+}
+
+section#work ul li {
+  grid-column: 1 / span 2;
+  position: relative;
+  width: 100%;
+}
+
+section#work ul li img {
+  width: 100%;
+}
+
+h5 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.25em;
+  width: 100%;
+  left: 1rem;
+  bottom: 1rem;
+  transition-duration: 300ms;
+}
+
+div.desc {
+  display: block;
+  background-color: $main-color;
+  left: 0;
+  bottom: 0;
+  margin: 2% 0 -4% 0;
+  padding: 1em 0;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+  width: 100%;
+  height: 0.25em;
+  transition-duration: 300ms;
+}
+
+section#work ul li {
+  width: 100%;
+}
+
+// CONTACT STYLES //
+
+section#contact {
+  height: 65vh;
+}
+
+section#contact h3,
+section#contact h4 {
+  text-align: center;
+}
+
+div.footergrid {
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  align-self: center;
+  grid-template-columns: 50% 50%;
+}
+
+.footergrid p {
+  vertical-align: top;
+}
+
+.footergrid a {
+  text-align: right;
+  padding-right: 2em;
+  width: 60%;
+}
+
+// MEDIA QUERIES //
+
+@media screen and (min-width: 700px) {
+  h1 {
+    margin: 20% 0 0 0;
+  }
+
+  .left-half h1 {
+    margin: 25vh 4% 0 0;
+  }
+
+  .right-half h1 {
+    color: $main-color;
+    margin: 35vh 0 0 4%;
+  }
+
+  section ul {
+    flex-flow: row nowrap;
+  }
+
+  section#about ul li {
+    padding-right: 2em;
+  }
+
+  section#about ul li:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    padding: 5% 15% 10% 15%;
+  }
+
+  section#about ul li {
+    padding-right: 3.5em;
+  }
+
+  h1 {
+    margin: 10% 0 0 0;
+  }
+
+  button {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 4.5em;
+  }
+
+  h4 {
+    font-size: 3em;
+  }
+
+  ul {
+    margin: auto;
+  }
+
+  span.img-text,
+  h5 {
+  }
+
+  div.desc {
+    opacity: 1;
+  }
+
+  // IMAGE HOVER STYLES //
+  
+  section#work ul li a:hover div.desc {
+    height: 2.5em;
+  }
+
+  section#work ul li a:hover h5 {
+    bottom: 1.8rem;
+  }
+  section#work ul li#manito {
+    grid-column: 1 / span 2;
+  }
+
+  section#work ul li {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    margin: 5% 0 0 0;
+  }
+
+  .left-half h1 {
+    margin: 15vh 4% 0 0;
+  }
+
+  .right-half h1 {
+    color: $main-color;
+    margin: 25vh 0 0 4%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  ul.showcase-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section#work ul li#manito {
+    grid-column: 1 / span 2;
+  }
+
+  section#work ul li {
+    grid-column: span 1;
+  }
+  div.footergrid {
+    width: 40%;
+  }
+  section.gallery ul li.largerspan {
+    grid-column: 1 / span 2;
+}
+}
