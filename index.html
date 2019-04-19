@@ -1,4 +1,11 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
 <html lang="en">
 
 <head>
@@ -32,34 +39,34 @@
     </div>
     <div class="right-half">
       <h1>justice</h1>
-      <h2>a web and ux designer</h2>
+      <h2>ux and design theorist</h2>
     </div>
   </header>
   <nav>
-    <a href="#about"><button>about</button></a>
-    <a href="#work"><button>work</button></a>
-    <a href="#contact"><button>contact</button></a>
+    <a href="#about"><button role="Links to About Section">about</button></a>
+    <a href="#work"><button role="Links to About Section">work</button></a>
+    <a href="#contact"><button role="Links to About Section">contact</button></a>
   </nav>
 
   <section id="about">
-    <h3>what do i do?</h3>
-    <ul>
+    <h3 class="hideme">about me</h3>
+    <ul class="hideme">
       <li>
         <h4>design</h4>
         <p>
-          With my background in design, I can help you turn ideas into a brand and visual identity that will resonate strongly with your target audience.
+          I am a problem solver that works to define identities and visuals that resonate with people, fit their needs, and communicate stories.
         </p>
       </li>
       <li>
         <h4>web</h4>
         <p>
-          I can bring a responsive web site to life using html5, css3, and javascript. I prefer developing from scratch, but can work well within frameworks.
+          I love working with the web. I can bring a responsive web site to life (like this one!) using html5, css3, javascript, and all kinds of trendy frameworks and languages. 
         </p>
       </li>
       <li>
-        <h4>ux/ui</h4>
+        <h4>ux</h4>
         <p>
-          I can wireframe and create interfaces with a focus on intuitive design, content structure, and simple user interactions that will keep your users engaged.
+          I create experiences that engage users through a process focused workflow that puts an emphasis on research, prototyping, and human-centered design.
         </p>
       </li>
     </ul>
@@ -77,57 +84,66 @@
     <h3 class="main-color">my work</h3>
 
     <ul class="showcase-container">
-      <li id="manito" class="largerspan">
-        <a href="/manito">
+      <li id="manito">
+        <a href="manito.html">
           <div class="desc">
-            <h5>manito park visual identity revamp</h5>
+            <h5>manito park visual identity</h5>
           </div>
-          <img src="img/manito/destination-index.jpg" alt="Manito Park Visual Identity & Destination Posters" />
+          <img class="lazy" src="img/manito/destination-poster-digital.jpg" alt="Manito Park Visual Identity & Destination Posters" />
+        </a>
+      </li>
+      
+      <li id="manitosite">
+        <a href="manito-website.html">
+          <div class="desc">
+            <h5>manito park website</h5>
+          </div>
+          <img class="lazy" src="img/indexbanners/manitosite-banner.jpg" alt="Manito Park Website" />
         </a>
       </li>
       <li id="noise" class="largerspan">
-        <a href="/noise">
+        <a href="noise.html">
           <div class="desc">
             <h5>an introduction noise music</h5>
 
           </div>
-          <img src="img/noise/noise-1.jpg" alt="An Introduction to Noise Music" />
+          <img class="lazy" src="img/indexbanners/noise-banner.jpg" alt="An Introduction to Noise Music" />
         </a>
       </li>
-      <li class="journey">
-        <a href="/journey">
+      <li id="journey">
+        <a href="journey.html">
           <div class="desc">
             <h5>camp journey annual report</h5>
 
           </div>
-          <img src="img/journey/camp-6.jpg" alt="Camp Journey Annual Report and Thank You Card" />
+          <img class="lazy" src="img/indexbanners/journey-banner.jpg" alt="Camp Journey Annual Report and Thank You Card" />
         </a>
       </li>
       <li id="library">
-        <a href="/library">
+        <a href="rym.html">
           <div class="desc">
-            <h5>library information posters</h5>
+            <h5>rym redesign</h5>
 
           </div>
-          <img src="img/library/mmc-1.jpg" alt="EWU Library Information Posters" />
+          <img class="lazy" src="img/indexbanners/rym-banner.jpg" alt="RYM Design Study and Redesign Prototype" />
         </a>
       </li>
       <li id="silver">
-        <a href="/schwartzsilver">
+        <a href="wasteposter.html">
           <div class="desc">
-            <h5>schwartz/silver booklet</h5>
+            <h5>waste poster</h5>
 
           </div>
-          <img src="img/silver/silver-1.jpg" alt="Schwartz/Silver Architects Booklet" />
+          <img class="lazy" src="img/indexbanners/waste-banner.jpg" alt="EWU Waste Poster" />
         </a>
       </li>
       <li id="lodger">
-        <a href="https://jamsbury.github.io/Lodger-Google-Doodle/" target="_blank">
+        <a href="lodger.html">
           <div class="desc">
             <h5>lodger google doodle<br /></h5>
 
           </div>
-          <img src="img/bowie.jpg" alt="Lodger Google Doodle" />
+          <img class="lazy" src="img/indexbanners/lodger-banner.jpg" alt="Lodger Google Doodle" />
         </a>
       </li>
     </ul>
@@ -143,17 +159,23 @@
   <section id="contact">
     <h3>contact & links</h3>
     <h4>justicedsn@gmail.com</h4>
+    <p class="footerp">need some design done? send me an email and we can talk. if you're interested you can also take a look at my github or follow me on Instagram, where I post typographic sketches and hand lettering. </p>
+    
     <div class="footergrid">
-      <a href="https://github.com/jamsbury"><img src="img/github.png" alt="GitHub logo"></a>
-      <p>need some design done? send me an email and we can talk. if you're interested you can also take a look at my github.</p>
+      <div>
+        <a target="_blank" href="https://github.com/jamsbury"><img src="img/github.svg" alt="GitHub Link"></a>
+        <a target="_blank" href="https://www.instagram.com/justice.design/"><img src="img/instagram.svg" alt="Instagram Link"></a>
+      </div>
     </div>
-
+    <p class="copyright">Copyright <span class="year">2019</span>, updated April 19th.</p>
   </section>
 
   <!-- Scripts -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/plugins/lettering.js"></script>
+  <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/uikit.min.js"></script>
+  <script type="text/javascript" src="js/featherlight.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 

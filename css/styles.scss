@@ -4,14 +4,14 @@
 @import "boilerplate";
 // normalize
 @import "normalize";
-// lettering
-@import "lettering";
+// importing featherlight css
+@import "featherlight";
 // sub section styles
 @import "subsection";
 // 404
 @import "404";
-// typefaces
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto");
+// typeface
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,400,600,700");
 
 // GENERAL USE //
 
@@ -22,6 +22,17 @@ $off-white: #fffeee;
 
 $secondary-color: #414bff;
 
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: $main-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $main-color; /* Gecko Browsers */
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -30,6 +41,49 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.25;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+header svg {
+  position: absolute;
+  font-size: 12vw;
+  font-weight: 700;
+  height: 100%;
+  left: 23%;
+  margin-top: 5%;
+  color: $main-color;
+}
+
+header svg text {
+  fill: $main-color;
+  stroke: $main-color;
+  fill-opacity: 0;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 2s ease-out normal forwards;
+  animation-delay: 0.75s;
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 1px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 0.5px;
+  }
+  100% {
+    stroke-width: 0;
+    fill-opacity: 1;
+  }
 }
 
 .main-color {
@@ -45,36 +99,75 @@ h6 {
   display: block;
   font-size: 12vw;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 700;
   margin: 40% 0 0 0;
   color: $off-white;
 }
 
 h2 {
   margin: 5% 0 0 4%;
-  font-size: 4vw;
+  font-size: 3.5vw;
+  font-weight: 400;
   color: $main-color;
 }
 
 h3 {
   margin: auto;
-  text-align: left;
-  font-size: 2.5em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
 }
 
 h4 {
   font-size: 1.5em;
   line-height: 1;
   font-weight: bold;
+  font-weight: 400;
+}
+
+h5 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.25em;
+  width: 100%;
+  bottom: 1rem;
+  transition-duration: 300ms;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 h6 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin: 0;
+  text-align: left;
   color: #090909;
+  font-weight: 700;
 }
 
-//cite https://css-tricks.com/creating-non-rectangular-headers/
+
+
+.casetitle {
+  display: block;
+  margin: auto;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 1em;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.casetitle span {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 14pt;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+// https://css-tricks.com/creating-non-rectangular-headers/
 svg {
   position: absolute;
   padding: 0;
@@ -84,11 +177,13 @@ svg {
   width: 100%;
 }
 
-.desc svg {
-  bottom: 100%;
+a {
+  color: $main-color;
+  transition-duration: 300ms;
 }
 
 a:hover {
+  color: $dark-color;
   text-decoration: none;
 }
 
@@ -159,9 +254,9 @@ nav div {
   border-bottom-width: 2px;
   background-color: $main-color;
   transition-duration: 0.25s;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 button:hover {
@@ -170,6 +265,11 @@ button:hover {
 
 section {
   padding: 5% 5% 10% 5%;
+  scroll-behavior: smooth;
+}
+
+section:focus {
+  outline: 0;
 }
 
 // ABOUT SECTION STYLES //
@@ -181,15 +281,16 @@ section#about,
 
 section#about h4,
 #contact h4 {
-  margin: 5vh 0 0 0;
+  margin: auto;
+  margin-bottom: 1em;
 }
 
 ul {
-  display: flex;
+  display: grid;
   list-style: none;
-  flex-flow: column nowrap;
+  grid-template-columns: 1fr;
   justify-content: flex-start;
-  margin: auto auto 4.5em auto;
+  margin: auto;
   padding: 0;
   width: 100%;
 }
@@ -210,16 +311,12 @@ section#work ul {
   margin-bottom: 3em;
 }
 
-section#work h3 {
-  margin-bottom: 25px;
-}
-
 ul.showcase-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5em 3em;
-  width: 100%;
+  grid-gap: 12pt 12pt;
+  margin: auto;
 }
 
 section#work ul li {
@@ -232,27 +329,16 @@ section#work ul li img {
   width: 100%;
 }
 
-h5 {
-  position: absolute;
-  text-align: center;
-  font-size: 1.25em;
-  width: 100%;
-  bottom: 1rem;
-  transition-duration: 300ms;
-}
-
 div.desc {
   display: block;
   background-color: $main-color;
   left: 0;
   bottom: 0;
-  margin: 2% 0 -4% 0;
-  padding: 1em 0;
   position: absolute;
   z-index: 2;
-  opacity: 1;
   width: 100%;
-  height: 1.5em;
+  border-top: solid $off-white 3pt;
+  height: 3rem;
   transition-duration: 300ms;
 }
 
@@ -260,10 +346,16 @@ section#work ul li {
   width: 100%;
 }
 
+.hideme {
+  opacity: 0;
+}
+
 // CONTACT STYLES //
 
 section#contact {
   height: 65vh;
+  text-align: center;
+  position: relative;
 }
 
 section#contact h3,
@@ -274,12 +366,10 @@ section#contact h4 {
 div.footergrid {
   margin: auto;
   margin-top: 2em;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 2em;
   width: 80%;
   align-items: center;
   align-self: center;
+  text-align: center;
 }
 
 .footergrid p {
@@ -287,11 +377,43 @@ div.footergrid {
   vertical-align: top;
 }
 
-.footergrid a img {
+.footerp {
+  grid-column: span 2;
+  vertical-align: top;
+  width: 90%;
+  display: block;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+.footergrid div img {
   display: block;
   grid-column: 1;
   margin: auto;
+  width: 95%;
+  opacity: 1;
+  transition-duration: 300ms;
+}
+
+.footergrid div img:hover {
+  opacity: 0.85;
+}
+
+.footergrid div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+p.copyright {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
   width: 100%;
+  font-style: italic;
 }
 
 // MEDIA QUERIES //
@@ -330,6 +452,10 @@ div.footergrid {
   section {
     padding: 5% 15% 10% 15%;
   }
+  
+  section#work {
+    padding: 5% 19% 10% 19%;
+  }
 
   section#about ul li {
     padding-right: 3.5em;
@@ -363,28 +489,36 @@ div.footergrid {
     opacity: 1;
   }
 
+  .footergrid div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .footerp {
+  width: 70%;
+}
+
   // IMAGE HOVER STYLES //
 
   section#work ul li a:hover div.desc {
-    height: 2.5em;
+    background-color: $moderate-color;
   }
 
-  section#work ul li a:hover h5 {
-    bottom: 1.8rem;
-  }
-  section#work ul li#manito {
-    grid-column: 1 / span 2;
-  }
-
-  section#work ul li {
-    grid-column: span 1;
-  }
   div.footergrid {
     width: 55%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  section#work ul li {
+    grid-column: span 1;
+  }
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   h1 {
     margin: 5% 0 0 0;
   }
@@ -401,9 +535,19 @@ div.footergrid {
     color: $main-color;
     margin: 25vh 0 0 4%;
   }
+  .footergrid div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .footerp {
+  width: 40%;
+}
 }
 
 @media screen and (min-width: 2000px) {
+
   ul.showcase-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -421,4 +565,7 @@ div.footergrid {
   section.gallery ul li.largerspan {
     grid-column: 1 / span 2;
   }
+  .footerp {
+  width: 30%;
+}
 }
