@@ -9,6 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   background: #fff;
   color: #666;
+  overflow: -moz-scrollbars-none;
 }
 
 body {
