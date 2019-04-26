@@ -8370,11 +8370,6 @@ html.with-featherlight {
   }
 }
 
-embed {
-  width: 100%;
-  height: 50vh;
-}
-
 h6 {
   display: block;
   margin: auto;
@@ -8459,15 +8454,15 @@ section.case-study img {
 .featherlight .featherlight-content {
   margin: 0;
   padding: 0;
-  width: 80%;
   background: none;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .featherlight .featherlight-content img {
   margin: auto;
   padding: 0;
   border: none;
-  width: 100%;
 }
 
 .featherlight .featherlight-close-icon {
@@ -8500,7 +8495,7 @@ section.case-study h3 {
   color: #fffeee;
   display: block;
   margin: auto auto 0.5em auto;
-  padding: 0.20em 0.4em 0.3em 0.4em;
+  padding: 0.2em 0.4em 0.3em 0.4em;
   font-weight: 700;
   background-color: #00d9e5;
 }
@@ -8549,7 +8544,7 @@ section.gallery ul li {
   font-style: italic;
 }
 
-section.case-study p.byline {
+p.byline {
   font-size: 12pt;
   display: block;
   margin: auto;
@@ -8560,10 +8555,6 @@ section.case-study p.byline {
 
 section.gallery ul li.largerspan {
   grid-column: 1 / span 2;
-}
-
-#hidden {
-  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -8625,7 +8616,7 @@ section.gallery ul li.largerspan {
     max-width: 55%;
   }
   section.case-study p {
-    width: 50%;
+    width: 40%;
     margin: auto;
   }
   section.case-study img {
@@ -8724,6 +8715,12 @@ html {
   /* Gecko Browsers */
 }
 
+html.with-featherlight {
+  /* disable global scrolling when featherlights are visible */
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -8732,8 +8729,6 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.25;
-  overflow: -moz-scrollbars-vertical;
-  overflow-y: scroll;
 }
 
 header svg {
@@ -8825,7 +8820,7 @@ h5 {
   bottom: 1rem;
   transition-duration: 300ms;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 h6 {
@@ -8860,7 +8855,7 @@ svg {
   position: absolute;
   padding: 0;
   margin: 0;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
 }
@@ -9018,8 +9013,7 @@ div.desc {
   position: absolute;
   z-index: 2;
   width: 100%;
-  border-top: solid #fffeee 3pt;
-  height: 3rem;
+  height: 3.25rem;
   transition-duration: 300ms;
 }
 
@@ -9032,7 +9026,7 @@ section#work ul li {
 }
 
 section#contact {
-  height: 65vh;
+  height: 70vh;
   text-align: center;
   position: relative;
 }
@@ -9090,6 +9084,7 @@ div.footergrid {
 p.copyright {
   display: block;
   margin: auto;
+  font-size: 12pt;
   margin-top: 2em;
   width: 100%;
   font-style: italic;
@@ -9130,6 +9125,9 @@ p.copyright {
   section#about ul li {
     padding-right: 3.5em;
   }
+  section#about {
+    padding: 5% 19% 10% 19%;
+  }
   h1 {
     margin: 10% 0 0 0;
   }
@@ -9169,6 +9167,14 @@ p.copyright {
   section#work ul li {
     grid-column: span 1;
   }
+  section#about ul li.bio {
+    grid-column: span 3;
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-right: 0;
+    padding-bottom: 2em;
+  }
   ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -9197,6 +9203,10 @@ p.copyright {
 }
 
 @media screen and (min-width: 2000px) {
+  section#about ul li.bio {
+    grid-column: span 3;
+    width: 40%;
+  }
   ul.showcase-container {
     grid-template-columns: 1fr 1fr;
   }

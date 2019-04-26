@@ -5,22 +5,17 @@ $white: #fffeee;
 
 $secondary-color: #414bff;
 
-embed {
-  width: 100%;
-  height: 50vh;
-}
-
 h6 {
   display: block;
   margin: auto;
-  font-size: 4em; 
+  font-size: 4em;
   text-align: center;
   margin-bottom: 1.5em;
 }
 
 nav.subset a {
   flex: 0;
-  min-width: 20%; 
+  min-width: 20%;
 }
 
 .case-study > p {
@@ -34,7 +29,6 @@ nav.subset a {
 nav.subset {
   width: 100%;
   height: 4em;
-
 }
 
 nav button svg {
@@ -48,7 +42,6 @@ div.navtitle {
   max-width: 80%;
   background-color: $main-color;
 }
-
 
 section.gallery {
   display: block;
@@ -96,15 +89,15 @@ section.case-study img {
 .featherlight .featherlight-content {
   margin: 0;
   padding: 0;
-  width: 80%;
   background: none;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .featherlight .featherlight-content img {
   margin: auto;
   padding: 0;
   border: none;
-  width: 100%;
 }
 
 .featherlight .featherlight-close-icon {
@@ -112,24 +105,24 @@ section.case-study img {
 }
 
 .featherlight.cleaner .featherlight-content {
-    padding: 0;
-    border-bottom:0;
+  padding: 0;
+  border-bottom: 0;
 }
 
 .featherlight.cleaner .featherlight-previous {
-    background: none;
+  background: none;
 }
 
 .featherlight.cleaner .featherlight-previous span {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .featherlight.cleaner .featherlight-next {
-    background: none;
+  background: none;
 }
 
 .featherlight.cleaner .featherlight-next span {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 section.case-study h3 {
@@ -137,7 +130,7 @@ section.case-study h3 {
   color: $white;
   display: block;
   margin: auto auto 0.5em auto;
-  padding: 0.20em 0.4em 0.3em 0.4em;
+  padding: 0.2em 0.4em 0.3em 0.4em;
   font-weight: 700;
   background-color: $main-color;
 }
@@ -186,7 +179,7 @@ section.gallery ul li {
   font-style: italic;
 }
 
-section.case-study p.byline {
+p.byline {
   font-size: 12pt;
   display: block;
   margin: auto;
@@ -200,7 +193,6 @@ section.gallery ul li.largerspan {
 }
 
 #hidden {
-  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -209,11 +201,11 @@ section.gallery ul li.largerspan {
   }
   section.gallery ul li {
     grid-column: span 1;
-}
-      section.case-study p {
-  width: 60%;
+  }
+  section.case-study p {
+    width: 60%;
     margin: auto;
-}
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -221,56 +213,56 @@ section.gallery ul li.largerspan {
     flex: 12;
   }
   section.gallery {
-  max-width: 85%;
-}
-    section.case-study {
-  width: 70%;
-  margin: auto;
-}
+    max-width: 85%;
+  }
+  section.case-study {
+    width: 70%;
+    margin: auto;
+  }
   section.case-study img {
-  width: 80%;
-}
+    width: 80%;
+  }
   .reveal-case-study {
-  width: 50%;
-}
+    width: 50%;
+  }
   .button-link {
-  width: 80%;
-}
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   section.gallery {
     max-width: 65%;
   }
-    section.case-study p {
-  width: 60%;
+  section.case-study p {
+    width: 60%;
     margin: auto;
-}
+  }
   section.case-study img {
-  width: 70%;
-}
+    width: 70%;
+  }
   .reveal-case-study {
-  width: 35%;
-}
-    .button-link {
-  width: 70%;
-}
+    width: 35%;
+  }
+  .button-link {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 2000px) {
   section.gallery {
     max-width: 55%;
   }
-    section.case-study p {
-  width: 50%;
+  section.case-study p {
+    width: 40%;
     margin: auto;
-}
+  }
   section.case-study img {
-  width: 60%;
-}
+    width: 60%;
+  }
   .reveal-case-study {
-  width: 30%;
-}
-    .button-link {
-  width: 60%;
-}
+    width: 30%;
+  }
+  .button-link {
+    width: 60%;
+  }
 }
