@@ -12,4 +12,4 @@
  * EWU Visual Communication Design website mockup
  * J's Bespoke Dashboard
  
- Thanks for taking a look,, if you happen to find any typos or mistakes please email me so I can fix them. 
+ Thanks for taking a look, if you happen to find any typos or mistakes please email me so I can fix them. 
