@@ -4,7 +4,7 @@ var today = new Date();
 var year = today.getFullYear();
 
 var $container = $("html, body"),
-  $scrollTo = $(".case-study"); 
+  $scrollTo = $(".case-study");
 
 console.log(today);
 
@@ -29,9 +29,9 @@ $(function() {
 
 // Orphan check, prevents typographic orphans most of the time.
 
-$('p').each(function(){
+$("p").each(function() {
   var string = $(this).html();
-  string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+  string = string.replace(/ ([^ ]*)$/, "&nbsp;$1");
   $(this).html(string);
 });
 
@@ -60,7 +60,6 @@ $('p').each(function(){
 //    $("#about").fadeIn( 100 );
 //  });
 
-
 // About me text fade-in
 
 $(document).ready(function() {
@@ -79,10 +78,24 @@ $(document).ready(function() {
   });
 });
 
+(function(h, o, t, j, a, r) {
+  h.hj =
+    h.hj ||
+    function() {
+      (h.hj.q = h.hj.q || []).push(arguments);
+    };
+  h._hjSettings = { hjid: 1265298, hjsv: 6 };
+  a = o.getElementsByTagName("head")[0];
+  r = o.createElement("script");
+  r.async = 1;
+  r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+
 // Featherlight config
 
 $.extend($.featherlight.defaults, {
-   closeOnClick:   'anywhere', 
+  closeOnClick: "anywhere"
 });
 
 // Error check
