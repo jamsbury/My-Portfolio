@@ -3,24 +3,33 @@
 var today = new Date();
 var year = today.getFullYear();
 
-var $container = $("html, body"),
-  $scrollTo = $(".case-study");
-
-console.log(today);
 
 // Log "year" variable, for troubleshooting purpose
 
 $(".year").text(year);
 
-// Lazy loading initialization and config
+// Scroll function for case study buttons
+
+var $container = $("html, body"),
+  $scrollTo = $(".case-study");
+
+console.log(today);
+
+
+// Lazy loading initialization and configuration
 
 $(function() {
   $(".lazy").Lazy({
     scrollDirection: "vertical",
+
+    // Set fade time
     effect: "fadeIn",
     effectTime: 2000,
+
     threshold: 0,
     visibleOnly: true,
+
+    // Error check
     onError: function(element) {
       console.log("There's been an error loading " + element.data("src"));
     }
@@ -63,20 +72,25 @@ $("p").each(function() {
 // About me text fade-in
 
 $(document).ready(function() {
-  /* Every time the window is scrolled ... */
+
+  // Every time the window is scrolled ...
   $(window).scroll(function() {
-    /* Check the location of each desired element */
+
+    // Check the location of each desired element
     $(".hideme").each(function(i) {
       var bottom_of_object = $(this).position().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-      /* If the object is completely visible in the window, fade it it */
+      // If the object is completely visible in the window, fade it in
       if (bottom_of_window > bottom_of_object) {
         $(this).animate({ opacity: "1" }, 600);
       }
     });
   });
 });
+
+
+// Hotjar tracking script for testing and issue identification
 
 (function(h, o, t, j, a, r) {
   h.hj =
@@ -92,13 +106,13 @@ $(document).ready(function() {
   a.appendChild(r);
 })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
 
-// Featherlight config
+// Featherlight Lightbox config
 
 $.extend($.featherlight.defaults, {
   closeOnClick: "anywhere"
 });
 
-// Error check
+// Error check, if this prints everything is fine!
 
 console.log(
   "Once there were mountains on mountains / And once there were sun birds to soar with / And once I could never be down"
