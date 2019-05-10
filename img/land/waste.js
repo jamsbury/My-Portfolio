@@ -40,26 +40,16 @@ function setup() {
     draw();
 }
 
-// Randombly generate a random RGBA value for the effect. 
+// Randombly generate a random RGBA value for the effect. This can sometimes result in blacks that are invisible. 
 
 function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
-// Same as above, but generates a background color for the effect.  
-
-function random_rgba_bg() {
-  var o = Math.round, r = Math.random, s = 255;
-  return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(0.5) + ')';
-}
-
-
-// Assign the random RGBA to the color and bg color variable
+// Assign the random RGBA to the color variable.
 
 var color = random_rgba();
-
-var bgcolor = random_rgba_bg();
 
 // Log color value for testing.
 
@@ -87,7 +77,7 @@ function draw() {
   
   // establish color of the background
 
-  ctx.fillStyle = bgcolor
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
   ctx.fillRect (0, 0, width, height);
 
   // create the color of the main effect using color variable defined above, starting on line 45

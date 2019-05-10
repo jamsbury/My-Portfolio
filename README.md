@@ -14,6 +14,6 @@
  
  Thanks for taking a look, if you happen to find any typos or mistakes please email me so I can fix them.
  
-Also, since you're here, take this little easter egg. It will be different each time you refresh the page.
+Also, since you're here, take this little easter egg:
 
 www.justice-amsbury.com/img/land/wasteland
