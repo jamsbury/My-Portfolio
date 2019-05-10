@@ -15,13 +15,6 @@ var $container = $("html, body"),
 
 console.log(today);
 
-// browser back button for reliable backing
-
-$('button#goback').on('click', function(e){
-  e.preventDefault();
-  window.history.back();
-});
-
 
 // Lazy loading initialization and configuration
 
