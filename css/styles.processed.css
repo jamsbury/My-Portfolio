@@ -9224,9 +9224,7 @@ p.copyright {
   ul.showcase-container {
     grid-template-columns: 1fr 1fr;
   }
-  section#work ul li#manito {
-    grid-column: 1 / span 2;
-  }
+
   section#work ul li {
     grid-column: span 1;
   }
