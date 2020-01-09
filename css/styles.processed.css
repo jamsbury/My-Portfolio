@@ -8701,6 +8701,8 @@ div.gethome:hover {
   }
 }
 
+/* This is where styles.css starts */
+
 html {
   scroll-behavior: smooth;
 }
@@ -8806,7 +8808,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   line-height: 1;
   font-weight: bold;
   font-weight: 700;
@@ -8967,14 +8969,19 @@ section#about,
   position: relative;
 }
 
+section#about ul {
+  grid-row-gap: 1em;
+}
+
+section#about p {
+  color: #fffeee;
+}
+
 section#about h4,
 #contact h4 {
   margin: auto;
   margin-bottom: 0.75rem;
-}
-
-section#about h3 {
-  margin-bottom: 0.75rem;
+  
 }
 
 ul {
@@ -9182,13 +9189,25 @@ p.copyright {
     grid-column: span 1;
   }
   section#about ul li.bio {
-    grid-column: span 3;
-    width: 60%;
+    grid-column: span 2;
+    width: 100%;
     display: block;
     margin: auto;
-    padding-right: 0;
-    padding-bottom: 2em;
+    padding: 0 0 2em 1em;
   }
+
+  section#about ul li.bio-title h4 {
+    display: block;
+    margin: 0;
+    padding: 0 0 0.25em 0;
+    text-align: left;
+  }
+
+  section#about ul li.bio-title {
+    margin: 0;
+    padding: 0;
+  }
+
   ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
