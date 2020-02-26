@@ -1429,7 +1429,7 @@ section#contact {
 section#contact div.logo-containers {
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -1527,13 +1527,13 @@ header div.four-oh-four {
   }
 
   section#contact div.logo-containers {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width: 100%;
     justify-content: space-between;
   }
 
   section#contact div.logo-containers img {
-    width: 40%;
+    width: 100%;
     margin: auto;
     display: block;
   }
@@ -1553,8 +1553,10 @@ header div.four-oh-four {
 
   p.footerp {
     width: 100%;
+    margin-bottom: 0;
   }
   p.copyright {
+    margin-top: 0;
     width: 100%;
     grid-column: span 2;
     text-align: right;
@@ -1601,10 +1603,12 @@ header div.four-oh-four {
 
   section#contact div.logo-containers {
     flex-flow: row wrap;
+    width: 90%;
+    margin: 0 0 0 auto;
   }
 
   section#contact div.logo-containers img:first-child {
-    margin-bottom: 90%;
+    margin-bottom: 2em;
   }
 }
 
@@ -1657,6 +1661,24 @@ header div.four-oh-four {
   .footerp {
     width: 40%;
   }
+
+  section#contact div.logo-containers {
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 0 0 0 auto;
+  }
+
+  section#contact div.logo-containers img {
+    width: 100%;
+  }
+
+  section#contact div.logo-containers img:first-child {
+    margin-bottom: 2em;
+  }
+
+  section#contact {
+    grid-column-gap: 1.25em;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -1677,7 +1699,38 @@ header div.four-oh-four {
   section.gallery ul li.largerspan {
     grid-column: 1 / span 2;
   }
-  .footerp {
-    width: 30%;
+  section#work div.desc h5 {
+    font-size: 1.6em;
+  }
+  section#contact div h5 {
+    font-size: 1.5em;
+  }
+  p.footerp {
+    width: 75%;
+    margin: 0 auto 0 0;
+    font-size: 1.5em;
+  }
+  p.copyright {
+    font-size: 1.5em;
+  }
+  section#contact {
+    grid-column-gap: 2em;
+  }
+  section#contact div.logo-containers {
+    flex-flow: row wrap;
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+
+  section#contact div.logo-containers img {
+    width: 100%;
+  }
+
+  section#contact div.logo-containers img:first-child {
+    margin-bottom: 4em;
+  }
+
+  section#contact {
+    grid-column-gap: 1.25em;
   }
 }
