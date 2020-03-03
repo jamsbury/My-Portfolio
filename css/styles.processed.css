@@ -24,6 +24,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 @media print {
@@ -439,6 +440,7 @@ textarea {
  */
 button {
   overflow: visible;
+  text-decoration: none;
 }
 
 /**
@@ -774,6 +776,7 @@ nav button svg {
 
 div.navtitle {
   flex: 4;
+  font-size: 1.25em;
   font-weight: 700;
   max-width: 100%;
   background-color: #00d9e5;
@@ -794,6 +797,7 @@ section.gallery {
   margin: auto;
   font-size: 2em;
   font-weight: 700;
+  text-decoration: none;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
@@ -944,6 +948,7 @@ section.gallery ul li.largerspan {
 @media screen and (min-width: 900px) {
   nav .navtitle {
     flex: 12;
+    font-size: 2em;
   }
   section.gallery {
     max-width: 85%;
@@ -1200,12 +1205,11 @@ h6 {
   font-size: 1.5em;
   margin: 0;
   display: block;
-  padding: 0.5em;
+  padding: 0.5em 0 0.5em 0;
   text-align: left;
-  color: #fffeee;
+  color: black;
   font-weight: 700;
   width: fit-content;
-  background-color: #000000;
 }
 
 .casetitle {
@@ -1494,6 +1498,11 @@ svg.missing-page {
 header div.four-oh-four {
   text-align: left;
   align-items: center;
+}
+
+a {
+  border: none;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {
