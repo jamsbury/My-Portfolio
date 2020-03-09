@@ -824,6 +824,7 @@ section.case-study p {
 section.case-study img {
   margin: 1.25em auto 0.5em auto;
   display: block;
+  width: 100%;
 }
 
 .featherlight .featherlight-content {
