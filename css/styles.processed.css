@@ -1506,6 +1506,57 @@ a {
   text-decoration: none;
 }
 
+/* MASTER SERVICE AGREEMENT STYLES */
+
+section.msa-nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+section.msa-nav div {
+  width: 100%;
+  margin: auto;
+}
+
+h6.msa-toc {
+  text-align: left;
+  margin: 0 auto 0 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+section.msa-nav div a {
+  display: block;
+  font-size: 1.25em;
+  padding: 0.5em 0 0.5em 0;
+}
+
+#project,
+#revisions,
+#time,
+#archival,
+#payments,
+#meetings,
+#cancellations,
+#changes,
+#ip,
+#hosting,
+#photography,
+#late-payment,
+#marketing,
+#indemnification,
+#law-forum,
+#discontinuation,
+#damages,
+#changes {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
 @media screen and (min-width: 700px) {
   h1 {
     margin: 20% 0 0 0;
@@ -1570,6 +1621,34 @@ a {
     width: 100%;
     grid-column: span 2;
     text-align: right;
+  }
+
+  section.msa-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    text-align: left;
+  }
+  
+  section.msa-nav div {
+    width: 100%;
+    margin: auto;
+  }
+  
+  h6.msa-toc {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  
+  section.msa-nav div a {
+    display: block;
+    font-size: 1em;
+    padding: 0.5em 0 0.5em 0;
   }
 }
 
@@ -1689,6 +1768,15 @@ a {
   section#contact {
     grid-column-gap: 1.25em;
   }
+  section.msa-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 0;
+    margin: auto;
+    width: 60%;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -1742,5 +1830,14 @@ a {
 
   section#contact {
     grid-column-gap: 1.25em;
+  }
+  section.msa-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 0;
+    margin: auto;
+    width: 50%;
+    text-align: left;
   }
 }
