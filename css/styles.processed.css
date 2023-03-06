@@ -1331,7 +1331,7 @@ button:hover {
 }
 
 section {
-  padding: 5% 5% 10% 5%;
+  padding: 5%;
   scroll-behavior: smooth;
 }
 
@@ -1357,6 +1357,24 @@ section#about h4,
 #contact h4 {
   margin: auto;
   margin-bottom: 0.75rem;
+}
+
+section#about ul li.bio-title p {
+  margin: 0;
+}
+
+section#about ul li.bio-title img {
+  display: inline;
+  width: 18px;
+  margin-right: 4px;
+}
+
+section#about ul li.bio-title a {
+  color: #fffeee;
+}
+
+section#about ul li.bio-title a:hover {
+  color: #003c40;
 }
 
 ul {
@@ -1486,8 +1504,7 @@ p.copyright {
   font-size: 12pt;
   margin-top: 4em;
   width: 100%;
-  font-style: italic;
-  overflow: hidden;
+  color:#999;
 }
 
 svg.missing-page {
@@ -1594,7 +1611,7 @@ section.msa-nav div a {
   }
 
   section#contact div.logo-containers img {
-    width: 100%;
+    width: 50%;
     margin: auto;
     display: block;
   }
@@ -1620,7 +1637,7 @@ section.msa-nav div a {
     margin-top: 0;
     width: 100%;
     grid-column: span 2;
-    text-align: right;
+    text-align: left;
   }
 
   section.msa-nav {
@@ -1657,7 +1674,7 @@ section.msa-nav div a {
     padding: 5% 15% 10% 15%;
   }
   section#work {
-    padding: 5% 19% 10% 19%;
+    padding: 5% 19% 2% 19%;
   }
   section#about ul li {
     padding-right: 3.5em;
@@ -1716,7 +1733,7 @@ section.msa-nav div a {
   section#about ul li.bio-title h4 {
     display: block;
     margin: 0;
-    padding: 0 0 0.25em 0;
+    padding: 0;
     text-align: left;
   }
 
