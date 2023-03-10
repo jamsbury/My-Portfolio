@@ -779,7 +779,7 @@ div.navtitle {
   font-size: 1.25em;
   font-weight: 700;
   max-width: 100%;
-  background-color: #00d9e5;
+  background-color: #004F87;
 }
 
 section.gallery {
@@ -873,7 +873,7 @@ section.case-study h3 {
   margin: auto auto 0.5em auto;
   padding: 0.2em 0.4em 0.3em 0.4em;
   font-weight: 700;
-  background-color: #00d9e5;
+  background-color: #004F87;
 }
 
 .reveal-case-study {
@@ -1040,14 +1040,14 @@ div.missing h3 {
   margin: auto;
   text-align: center;
   margin: 1em 0 0 0;
-  color: #00d9e5;
+  color: #004F87;
 }
 
 div.gethome {
   display: block;
   margin: 1em auto;
   text-align: center;
-  background-color: #00d9e5;
+  background-color: #004F87;
   color: #fffeee;
   padding: 0.5em;
   transition-duration: 0.25s;
@@ -1057,7 +1057,7 @@ div.gethome {
 }
 
 div.gethome:hover {
-  background-color: #00b5bf;
+  background-color: #002A47;
 }
 
 @media screen and (min-width: 900px) {
@@ -1085,12 +1085,12 @@ html {
 }
 
 ::selection {
-  background: #00d9e5;
+  background: #004F87;
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #00d9e5;
+  background: #004F87;
   /* Gecko Browsers */
 }
 
@@ -1117,12 +1117,12 @@ header svg {
   height: 100%;
   left: 23%;
   margin-top: 5%;
-  color: #00d9e5;
+  color: #004F87;
 }
 
 header svg text {
-  fill: #00d9e5;
-  stroke: #00d9e5;
+  fill: #004F87;
+  stroke: #004F87;
   fill-opacity: 0;
   stroke-width: 0;
   stroke-dasharray: 100% 0;
@@ -1152,7 +1152,7 @@ header svg text {
 }
 
 .main-color {
-  color: #00d9e5;
+  color: #004F87;
 }
 
 h1,
@@ -1173,7 +1173,7 @@ h2 {
   margin: 5% 0 0 4%;
   font-size: 3.5vw;
   font-weight: 400;
-  color: #00d9e5;
+  color: #004F87;
 }
 
 h3 {
@@ -1245,7 +1245,7 @@ svg {
 }
 
 a {
-  color: #00d9e5;
+  color: #004F87;
   transition-duration: 300ms;
 }
 
@@ -1263,7 +1263,7 @@ header {
 }
 
 .left-half {
-  background-color: #00d9e5;
+  background-color: #004F87;
   flex: 1;
   padding: 0 1em 0 0;
   margin: 0;
@@ -1281,7 +1281,7 @@ header {
 }
 
 .right-half h1 {
-  color: #00d9e5;
+  color: #004F87;
   margin: 40vh 0 0 4%;
 }
 
@@ -1319,7 +1319,7 @@ nav div {
   border: solid #fffeee 1px;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  background-color: #00d9e5;
+  background-color: #004F87;
   transition-duration: 0.25s;
   font-size: 2em;
   line-height: 1;
@@ -1327,7 +1327,7 @@ nav div {
 }
 
 button:hover {
-  background-color: #00b5bf;
+  background-color: #002A47;
 }
 
 section {
@@ -1341,7 +1341,7 @@ section:focus {
 
 section#about,
 #contact {
-  background-color: #00d9e5;
+  background-color: #004F87;
   position: relative;
 }
 
@@ -1421,7 +1421,7 @@ section#work ul li img {
 
 div.desc {
   display: block;
-  background-color: #00d9e5;
+  background-color: #004F87;
   left: 0;
   bottom: 0;
   position: absolute;
@@ -1501,10 +1501,10 @@ p.copyright {
   display: block;
   text-align: left;
   margin: auto;
-  font-size: 12pt;
+  font-size: 10pt;
   margin-top: 4em;
   width: 100%;
-  color:#999;
+  color:#002A47;
 }
 
 svg.missing-page {
@@ -1582,7 +1582,7 @@ section.msa-nav div a {
     margin: 25vh 4% 0 0;
   }
   .right-half h1 {
-    color: #00d9e5;
+    color: #004F87;
     margin: 35vh 0 0 4%;
   }
   section ul {
@@ -1701,7 +1701,7 @@ section.msa-nav div a {
     opacity: 1;
   }
   section#work ul li a:hover div.desc {
-    background-color: #00b5bf;
+    background-color: #002A47;
   }
   section#contact h3 {
     margin-bottom: 0.75em;
@@ -1755,7 +1755,7 @@ section.msa-nav div a {
     margin: 15vh 4% 0 0;
   }
   .right-half h1 {
-    color: #00d9e5;
+    color: #004F87;
     margin: 25vh 0 0 4%;
   }
   .footergrid div {
