@@ -1250,8 +1250,7 @@ a {
 }
 
 a:hover {
-  color: #003c40;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 header {
@@ -1259,7 +1258,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
 }
 
 .left-half {
@@ -1277,12 +1276,12 @@ header {
 }
 
 .left-half h1 {
-  margin: 30vh 4% 0 0;
+  margin: 45vh 4% 0 0;
 }
 
 .right-half h1 {
   color: #004F87;
-  margin: 40vh 0 0 4%;
+  margin: 50vh 0 0 4%;
 }
 
 nav {
@@ -1374,7 +1373,7 @@ section#about ul li.bio-title a {
 }
 
 section#about ul li.bio-title a:hover {
-  color: #003c40;
+  text-decoration: underline;
 }
 
 ul {
@@ -1579,11 +1578,11 @@ section.msa-nav div a {
     margin: 20% 0 0 0;
   }
   .left-half h1 {
-    margin: 25vh 4% 0 0;
+    margin: 40vh 4% 0 0;
   }
   .right-half h1 {
     color: #004F87;
-    margin: 35vh 0 0 4%;
+    margin: 45vh 0 0 4%;
   }
   section ul {
     flex-flow: row nowrap;
@@ -1752,11 +1751,11 @@ section.msa-nav div a {
     width: 40%;
   }
   .left-half h1 {
-    margin: 15vh 4% 0 0;
+    margin: 35vh 4% 0 0;
   }
   .right-half h1 {
     color: #004F87;
-    margin: 25vh 0 0 4%;
+    margin: 40vh 0 0 4%;
   }
   .footergrid div {
     display: flex;
