@@ -986,6 +986,10 @@ section.gallery ul li.largerspan {
   .largerspan .button-link {
     width: 70%;
   }
+  nav.subset a {
+    flex: 0;
+    min-width: 10%;
+  }
 }
 
 @media screen and (min-width: 2000px) {
